@@ -2,6 +2,8 @@
 
 # Around The World
 
+link: https://abareyan.github.io/TriviaGame/
+
 ** About the game **
 
 In this game, you will find interesting facts about our world, for example, the longest river, the largest tree, etc., expand your knowledge about it.
