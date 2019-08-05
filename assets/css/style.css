@@ -1,0 +1,130 @@
+body {
+    background-image: url("../images/world.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: rgb(87, 52, 7);
+}
+
+#container {
+    background-color: antiquewhite;
+    width: 80%;
+    height: 500px;
+    border: 1px solid #000;
+    margin: 20px auto;
+    box-shadow: 5px 5px 5px 5px #000;
+}
+
+h1 {
+    color: rgb(104, 62, 12);
+    font-size: 4em;
+    font-family: 'Patua One', cursive;
+    text-align: center;
+    padding: 20px;
+    text-shadow: 4px 4px 4px rgb(111, 114, 98);
+}
+
+header {
+    width: 100%;
+    height: 100px;
+}
+
+#start {
+    width: 30%;
+    height: 35px;
+    margin: 240px auto;
+}
+
+#start:hover {
+    cursor: pointer;
+}
+
+#start p {
+    text-align: center;
+    font-size: 2em;
+}
+
+#start p:hover {
+    text-align: center;
+    font-size: 2.4em;
+    text-shadow: 2px 2px 2px rgb(156, 158, 146);
+}
+
+#answer1:hover,
+#answer2:hover,
+#answer3:hover,
+#answer4:hover {
+    cursor: pointer;
+    font-size: 1.7em;
+    text-shadow: 1px 1px 1px rgb(156, 158, 146);
+}
+
+#answer1,
+#answer2,
+#answer3,
+#answer4 {
+    width: 60%;
+    height: auto;
+    /* border: 1px solid #000; */
+    margin: 25px auto;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+}
+
+#middle {
+    margin: 110px auto;
+}
+
+#timer {
+    margin: 30px auto;
+    text-align: center;
+    font-size: 1.7em;
+}
+
+#question {
+    margin: 30px auto;
+    text-align: center;
+    font-size: 1.8em;
+    font-style: oblique;
+}
+
+#correctAnswer {
+    margin: 20px auto;
+    text-align: center;
+    font-size: 1.6em;
+}
+
+.answersAll {
+    margin: 10px;
+}
+
+#correct,
+#incorrect,
+#unanswered {
+    width: 60%;
+    height: auto;
+    margin: 25px auto;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#startover {
+    width: 60%;
+    height: auto;
+    margin: 30px auto;
+    text-align: center;
+    font-size: 2em;
+}
+
+#startover:hover {
+    cursor: pointer;
+    font-size: 2.2em;
+    text-shadow: 2px 2px 2px rgb(156, 158, 146);
+}
