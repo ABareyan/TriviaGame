@@ -1,32 +1,32 @@
 var allQuestion = [
     question1 = {
-        harc: "The Largest Lake In The World",
-        patasxan: ["Sevan (Armenia)", "Great Salt Lake (United States)", "Superior (United States)", "Victoria (Kenya)"],
-        chisht: 2,
+        quastionList: "The Largest Lake In The World",
+        answer: ["Sevan (Armenia)", "Great Salt Lake (United States)", "Superior (United States)", "Victoria (Kenya)"],
+        answCorrect: 2,
         image: "assets/images/lake.gif"
     },
     question2 = {
-        harc: "How Many Children Can Have a Spouse In China?",
-        patasxan: ["As much as they can (want)", "No more than 2", "At least 3", "Just 1"],
-        chisht: 1,
+        quastionList: "How Many Children Can Have a Spouse In China?",
+        answer: ["As much as they can (want)", "No more than 2", "At least 3", "Just 1"],
+        answCorrect: 1,
         image: "assets/images/kids.gif"
     },
     question3 = {
-        harc: "Tallest Buildings In The World",
-        patasxan: ["Burj Khalifa (Dubai)", "Lotte World Tower (Seoul)", "Shanghai Tower (Shanghai)", "Wells Fargo Center (Salt Lake City)"],
-        chisht: 0,
+        quastionList: "Tallest Buildings In The World",
+        answer: ["Burj Khalifa (Dubai)", "Lotte World Tower (Seoul)", "Shanghai Tower (Shanghai)", "Wells Fargo Center (Salt Lake City)"],
+        answCorrect: 0,
         image: "assets/images/building.gif"
     },
     question4 = {
-        harc: "What Was the First Christian Nation?",
-        patasxan: ["Jerusalem", "Greece", "Armenia", "Israel"],
-        chisht: 2,
+        quastionList: "What Was the First Christian Nation?",
+        answer: ["Jerusalem", "Greece", "Armenia", "Israel"],
+        answCorrect: 2,
         image: "assets/images/khor.jpg"
     },
     question5 = {
-        harc: "The Highest Mountain In The World",
-        patasxan: ["Godwin-Austen (China)", "Everest (Nepal)", "Makalu (Nepal)", "Nanga Parbat (Pakistan)"],
-        chisht: 1,
+        quastionList: "The Highest Mountain In The World",
+        answer: ["Godwin-Austen (China)", "Everest (Nepal)", "Makalu (Nepal)", "Nanga Parbat (Pakistan)"],
+        answCorrect: 1,
         image: "assets/images/everest.gif"
     }
 ];
@@ -46,7 +46,7 @@ for (var i = 0; i < allQuestion.length; i++) {
 
 var numArray = Math.floor(Math.random() * array.length);
 var numQuestion = array[numArray];
-var correctAnswer = numQuestion.patasxan[numQuestion.chisht];
+var correctAnswer = numQuestion.answer[numQuestion.answCorrect];
 
 
 function newGame() {
@@ -54,7 +54,7 @@ function newGame() {
     $('#correctAnswer').html("");
     $('#question').html("ALL DONE!");
 
-    for (var i = 0; i < numQuestion.patasxan.length; i++) {
+    for (var i = 0; i < numQuestion.answer.length; i++) {
         $('#answer' + (i + 1)).html("");
         $('#answer' + (i + 1)).data("");
     }
@@ -68,18 +68,18 @@ function newGame() {
     }
     numArray = Math.floor(Math.random() * array.length);
     numQuestion = array[numArray];
-    correctAnswer = numQuestion.patasxan[numQuestion.chisht];
+    correctAnswer = numQuestion.answer[numQuestion.answCorrect];
 }
 
 function reset() {
     $('#timer').html("Time remaining " + time + " seconds");
-    $('#question').html(numQuestion.harc);
+    $('#question').html(numQuestion.quastionList);
 
-    for (var i = 0; i < numQuestion.patasxan.length; i++) {
-        $('#answer' + (i + 1)).html(numQuestion.patasxan[i]);
-        $('#answer' + (i + 1)).data("value", numQuestion.patasxan[i]);
+    for (var i = 0; i < numQuestion.answer.length; i++) {
+        $('#answer' + (i + 1)).html(numQuestion.answer[i]);
+        $('#answer' + (i + 1)).data("value", numQuestion.answer[i]);
     }
-    correctAnswer = numQuestion.patasxan[numQuestion.chisht]
+    correctAnswer = numQuestion.answer[numQuestion.answCorrect]
 
     timer();
 }
@@ -139,7 +139,7 @@ function resetAll() {
 
 function correct() {
     $('#timer').html("Time remaining " + time + " seconds");
-    for (var i = 0; i < numQuestion.patasxan.length; i++) {
+    for (var i = 0; i < numQuestion.answer.length; i++) {
         $('#answer' + (i + 1)).html("");
         $('#answer' + (i + 1)).data("");
     }
