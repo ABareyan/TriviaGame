@@ -1,3 +1,4 @@
+// list of questions
 var allQuestion = [
     question1 = {
         quastionList: "The Largest Lake In The World",
@@ -28,27 +29,75 @@ var allQuestion = [
         answer: ["Godwin-Austen (China)", "Everest (Nepal)", "Makalu (Nepal)", "Nanga Parbat (Pakistan)"],
         answCorrect: 1,
         image: "assets/images/everest.gif"
+    },
+    question6 = {
+        quastionList: "The Biggest Nightclub In The World",
+        answer: ["Pacha Ibiza (Spain)", "Green Valley (Brasil)", "Amnesia Ibiza (Spain)", "Octagon (South Korea)"],
+        answCorrect: 0,
+        image: "assets/images/club.gif"
+    },
+    question7 = {
+        quastionList: "The Longest Rivers In The World",
+        answer: ["Mississippi-Missouri (USA)", "Amazon (Peru)", "Yangtze (China)", "Nile (Sudan)"],
+        answCorrect: 3,
+        image: "assets/images/river.gif"
+    },
+    question8 = {
+        quastionList: "The longest bridge in the world",
+        answer: ["Bang Na Expressway (Thailand)", "Hangzhou Bay Bridge (China)", "Danyang–Kunshan Grand Bridge (Shanghai)", "Lake Pontchartrain Causeway (USA)"],
+        answCorrect: 2,
+        image: "assets/images/bridge.gif"
+    },
+    question9 = {
+        quastionList: "The tallest trees in the world",
+        answer: ["The General Sherman (USA)", "Hyperion (USA)", "White Knight (Australia)", "Centurion (Australia)"],
+        answCorrect: 1,
+        image: "assets/images/tree.gif"
+    },
+
+    question10 = {
+        quastionList: "The fastest animal in the world",
+        answer: ["Frigate Bird", "Cheetah", "Peregrine Falcon", "White Throated Needletail"],
+        answCorrect: 2,
+        image: "assets/images/falcon.gif"
+    },
+    question11 = {
+        quastionList: "The Smallest Countries In The World",
+        answer: ["Monaco", "Nauru", "San Marino", "Vatican"],
+        answCorrect: 3,
+        image: "assets/images/vatican.gif"
+    },
+    question12 = {
+        quastionList: "The largest aircraft in the world",
+        answer: ["Airbus A300-600ST Beluga", "Antonov An-225 Mriya", "Boeing 747-8", "Airbus A380-800"],
+        answCorrect: 1,
+        image: "assets/images/plane.gif"
     }
+
+
 ];
 
-var time = 25;
-var correctCount = 0;
-var incorrectCount = 0;
-var unaswered = 0;
+var time = 25; // time
 
+var correctCount = 0; // count correct answers
 
+var incorrectCount = 0; // count incorrect answers
 
-var array = [];
+var unaswered = 0; // count unaswered answers
+
+var array = []; // input questions in array
+
+var gameTime; // for timer
 
 for (var i = 0; i < allQuestion.length; i++) {
     array.push(allQuestion[i]);
 }
 
-var numArray = Math.floor(Math.random() * array.length);
-var numQuestion = array[numArray];
-var correctAnswer = numQuestion.answer[numQuestion.answCorrect];
+var numArray = Math.floor(Math.random() * array.length); // choice question
+var numQuestion = array[numArray]; // choice question
+var correctAnswer = numQuestion.answer[numQuestion.answCorrect]; // correct answer
 
-
+// play again
 function newGame() {
     $('#timer').html("");
     $('#correctAnswer').html("");
@@ -71,6 +120,7 @@ function newGame() {
     correctAnswer = numQuestion.answer[numQuestion.answCorrect];
 }
 
+// start play
 function reset() {
     $('#timer').html("Time remaining " + time + " seconds");
     $('#question').html(numQuestion.quastionList);
@@ -84,8 +134,8 @@ function reset() {
     timer();
 }
 
-var gameTime;
 
+// timer
 function timer() {
     clearInterval(gameTime);
     gameTime = setInterval(decrement, 1000);
@@ -98,6 +148,7 @@ function decrement() {
     }
     $('#timer').html("Time remaining " + time + " seconds");
 
+    // next question if time's up
     if (time === "0" + 0) {
         unaswered++;
         clearInterval(gameTime);
@@ -106,6 +157,7 @@ function decrement() {
 
         correct();
         time = 25;
+
         if (array.length === 1) {
             setTimeout(function() {
                 newGame();
@@ -119,11 +171,11 @@ function decrement() {
             }, 5000)
 
         }
-        console.log("time's up");
 
     }
 }
 
+// function for the next question 
 function resetAll() {
     array = array.filter(function(item) { // no-repeat question
         return item !== numQuestion;
@@ -136,7 +188,7 @@ function resetAll() {
 
 }
 
-
+// function to shows correct answer and image
 function correct() {
     $('#timer').html("Time remaining " + time + " seconds");
     for (var i = 0; i < numQuestion.answer.length; i++) {
@@ -151,21 +203,21 @@ function correct() {
 
 $(document).ready(function() {
 
+
+    // for start the game push start
     $('#start').on("click", function() {
         $('#start').hide();
         reset();
 
     });
-    console.log(array);
-
-    // console.log(time);
 
 
-
+    // questions
     $('.answers').on("click", function() {
 
         var check = $(this).data('value');
 
+        // next question if answer is correct
         if (correctAnswer === check) {
             correctCount++;
             clearInterval(gameTime);
@@ -185,6 +237,7 @@ $(document).ready(function() {
             }
 
         } else {
+            // next question if answer is incorrect
             incorrectCount++;
             clearInterval(gameTime);
             $('#question').html("Nope!");
