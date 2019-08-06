@@ -13,7 +13,7 @@ var allQuestion = [
         image: "assets/images/kids.gif"
     },
     question3 = {
-        quastionList: "Tallest Buildings In The World",
+        quastionList: "The Tallest Buildings In The World",
         answer: ["Burj Khalifa (Dubai)", "Lotte World Tower (Seoul)", "Shanghai Tower (Shanghai)", "Wells Fargo Center (Salt Lake City)"],
         answCorrect: 0,
         image: "assets/images/building.gif"
@@ -43,20 +43,20 @@ var allQuestion = [
         image: "assets/images/river.gif"
     },
     question8 = {
-        quastionList: "The longest bridge in the world",
+        quastionList: "The Longest Bridge In The world",
         answer: ["Bang Na Expressway (Thailand)", "Hangzhou Bay Bridge (China)", "Danyang–Kunshan Grand Bridge (Shanghai)", "Lake Pontchartrain Causeway (USA)"],
         answCorrect: 2,
         image: "assets/images/bridge.gif"
     },
     question9 = {
-        quastionList: "The tallest trees in the world",
+        quastionList: "The Tallest Trees In The World",
         answer: ["The General Sherman (USA)", "Hyperion (USA)", "White Knight (Australia)", "Centurion (Australia)"],
         answCorrect: 1,
         image: "assets/images/tree.gif"
     },
 
     question10 = {
-        quastionList: "The fastest animal in the world",
+        quastionList: "The Fastest Animal In The World",
         answer: ["Frigate Bird", "Cheetah", "Peregrine Falcon", "White Throated Needletail"],
         answCorrect: 2,
         image: "assets/images/falcon.gif"
@@ -68,7 +68,7 @@ var allQuestion = [
         image: "assets/images/vatican.gif"
     },
     question12 = {
-        quastionList: "The largest aircraft in the world",
+        quastionList: "The Largest Aircraft In The World",
         answer: ["Airbus A300-600ST Beluga", "Antonov An-225 Mriya", "Boeing 747-8", "Airbus A380-800"],
         answCorrect: 1,
         image: "assets/images/plane.gif"
