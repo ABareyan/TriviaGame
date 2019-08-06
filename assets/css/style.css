@@ -128,3 +128,145 @@ img {
     font-size: 2.2em;
     text-shadow: 2px 2px 2px rgb(156, 158, 146);
 }
+
+@media screen and (min-width: 767px) and (max-width: 980px) {
+    #container {
+        height: 500px;
+    }
+    img {
+        width: auto;
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 639px) and (max-width: 768px) {
+    #container {
+        height: auto;
+    }
+    #start {
+        width: 30%;
+        height: 35px;
+        margin: 180px auto;
+    }
+    #answer1,
+    #answer2,
+    #answer3,
+    #answer4 {
+        width: 60%;
+        height: auto;
+        /* border: 1px solid #000; */
+        margin: 25px auto;
+        text-align: center;
+        font-size: 1.2em;
+    }
+    #answer1:hover,
+    #answer2:hover,
+    #answer3:hover,
+    #answer4:hover {
+        cursor: pointer;
+        font-size: 1.3em;
+        text-shadow: 1px 1px 1px rgb(156, 158, 146);
+    }
+    #timer {
+        margin: 20px auto;
+        font-size: 1.5em;
+    }
+    #question {
+        margin: 20px auto;
+        font-size: 1.6em;
+    }
+    #middle {
+        margin: 60px auto;
+    }
+    img {
+        width: auto;
+        height: 160px;
+    }
+    #correctAnswer {
+        margin: 20px auto;
+        text-align: center;
+        font-size: 1.5em;
+    }
+    #correct,
+    #incorrect,
+    #unanswered {
+        margin: 15px auto;
+        text-align: center;
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 640px) {
+    header {
+        width: 100%;
+        height: auto;
+    }
+    h1 {
+        font-size: 2.2em;
+        padding: 10px;
+        text-shadow: 2px 2px 2px rgb(111, 114, 98);
+    }
+    #container {
+        height: auto;
+    }
+    #start {
+        width: 30%;
+        height: 35px;
+        margin: 120px auto;
+    }
+    #start:hover {
+        cursor: pointer;
+    }
+    #start p {
+        font-size: 1.6em;
+    }
+    #start p:hover {
+        font-size: 1.8em;
+        text-shadow: 2px 2px 2px rgb(156, 158, 146);
+    }
+    #answer1,
+    #answer2,
+    #answer3,
+    #answer4 {
+        width: 60%;
+        height: auto;
+        /* border: 1px solid #000; */
+        margin: 15px auto;
+        text-align: center;
+        font-size: 1.1em;
+    }
+    #answer1:hover,
+    #answer2:hover,
+    #answer3:hover,
+    #answer4:hover {
+        cursor: pointer;
+        font-size: 1.2em;
+        text-shadow: 1px 1px 1px rgb(156, 158, 146);
+    }
+    #timer {
+        margin: 15px auto;
+        font-size: 1.3em;
+    }
+    #question {
+        margin: 15px auto;
+        font-size: 1.3em;
+    }
+    #middle {
+        margin: 40px auto;
+    }
+    img {
+        width: auto;
+        height: 120px;
+    }
+    #correctAnswer {
+        margin: 20px auto;
+        text-align: center;
+        font-size: 1.3em;
+    }
+    #correct,
+    #incorrect,
+    #unanswered {
+        margin: 20px auto;
+        font-size: 1.3em;
+    }
+}
