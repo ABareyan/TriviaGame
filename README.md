@@ -8,11 +8,11 @@ https://abareyan.github.io/TriviaGame/
 
 ** Screen Shots **
 
-![Screen1](assets/images/Screen Shot1.png)
+![Screen1](assets/images/ScreenShot1.png)
 
-![Screen2](assets/images/Screen Shot2.png)
+![Screen2](assets/images/ScreenShot2.png)
 
-![Screen3](assets/images/Screen Shot3.png)
+![Screen3](assets/images/ScreenShot3.png)
 
 
 ** About the game **
