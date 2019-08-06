@@ -1,8 +1,19 @@
 # TriviaGame
 
-# Around The World
+## Around The World
 
-link: https://abareyan.github.io/TriviaGame/
+** LINK **
+
+https://abareyan.github.io/TriviaGame/
+
+** Screen Shots **
+
+![Screen1](assets/images/Screen Shot1.png)
+
+![Screen2](assets/images/Screen Shot2.png)
+
+![Screen3](assets/images/Screen Shot3.png)
+
 
 ** About the game **
 
