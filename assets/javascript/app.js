@@ -77,7 +77,14 @@ var allQuestion = [
 
 ];
 
+var hint1 = false;
+
+var hint2 = true;
+
+
 var time = 25; // time
+
+var sec = 0; // check time
 
 var correctCount = 0; // count correct answers
 
@@ -129,6 +136,7 @@ function reset() {
         $('#answer' + (i + 1)).html(numQuestion.answer[i]);
         $('#answer' + (i + 1)).data("value", numQuestion.answer[i]);
     }
+
     correctAnswer = numQuestion.answer[numQuestion.answCorrect]
 
     timer();
@@ -137,6 +145,7 @@ function reset() {
 
 // timer
 function timer() {
+
     clearInterval(gameTime);
     gameTime = setInterval(decrement, 1000);
 }
@@ -149,7 +158,8 @@ function decrement() {
     $('#timer').html("Time remaining " + time + " seconds");
 
     // next question if time's up
-    if (time === "0" + 0) {
+    sec = parseInt(time)
+    if (sec === 0) {
         unaswered++;
         clearInterval(gameTime);
         $('#question').html("Time's up!");
