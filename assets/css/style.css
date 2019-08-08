@@ -1,19 +1,39 @@
 body {
     background-image: url("../images/world.jpg");
     background-position: center center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-attachment: fixed;
     background-size: cover;
     color: rgb(87, 52, 7);
 }
 
 #container {
+    position: relative;
     background-color: antiquewhite;
     width: 80%;
     height: 600px;
     border: 1px solid #000;
     margin: 20px auto;
     box-shadow: 5px 5px 5px 5px #000;
+}
+
+.hint1,
+.hint2 {
+    position: absolute;
+    border: 1px solid #000;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+.hint1 {
+    right: 40px;
+    top: 0;
+}
+
+.hint2 {
+    right: 120px;
+    top: 0;
 }
 
 h1 {

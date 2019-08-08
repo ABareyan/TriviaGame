@@ -7,13 +7,13 @@ var allQuestion = [
         image: "assets/images/lake.gif"
     },
     question2 = {
-        quastionList: "How Many Children Can Have a Spouse In China?",
+        quastionList: "How Many Children Can One Have In China?",
         answer: ["As much as they can (want)", "No more than 2", "At least 3", "Just 1"],
         answCorrect: 1,
         image: "assets/images/kids.gif"
     },
     question3 = {
-        quastionList: "The Tallest Buildings In The World",
+        quastionList: "The Tallest Building In The World",
         answer: ["Burj Khalifa (Dubai)", "Lotte World Tower (Seoul)", "Shanghai Tower (Shanghai)", "Wells Fargo Center (Salt Lake City)"],
         answCorrect: 0,
         image: "assets/images/building.gif"
@@ -37,7 +37,7 @@ var allQuestion = [
         image: "assets/images/club.gif"
     },
     question7 = {
-        quastionList: "The Longest Rivers In The World",
+        quastionList: "The Longest River In The World",
         answer: ["Mississippi-Missouri (USA)", "Amazon (Peru)", "Yangtze (China)", "Nile (Sudan)"],
         answCorrect: 3,
         image: "assets/images/river.gif"
@@ -62,7 +62,7 @@ var allQuestion = [
         image: "assets/images/falcon.gif"
     },
     question11 = {
-        quastionList: "The Smallest Countries In The World",
+        quastionList: "The Smallest Country In The World",
         answer: ["Monaco", "Nauru", "San Marino", "Vatican"],
         answCorrect: 3,
         image: "assets/images/vatican.gif"
@@ -76,10 +76,6 @@ var allQuestion = [
 
 
 ];
-
-var hint1 = false;
-
-var hint2 = true;
 
 
 var time = 25; // time
@@ -218,7 +214,6 @@ $(document).ready(function() {
     $('#start').on("click", function() {
         $('#start').hide();
         reset();
-
     });
 
 
