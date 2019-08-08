@@ -49,7 +49,7 @@ var allQuestion = [
         image: "assets/images/bridge.gif"
     },
     question9 = {
-        quastionList: "The Tallest Trees In The World",
+        quastionList: "The Tallest Tree In The World",
         answer: ["The General Sherman (USA)", "Hyperion (USA)", "White Knight (Australia)", "Centurion (Australia)"],
         answCorrect: 1,
         image: "assets/images/tree.gif"
