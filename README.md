@@ -2,11 +2,11 @@
 
 ## Around The World
 
-** LINK **
+## LINK
 
 https://abareyan.github.io/TriviaGame/
 
-** Screen Shots **
+## Screen Shots
 
 ![Screen1](assets/images/ScreenShot1.png)
 
@@ -15,7 +15,7 @@ https://abareyan.github.io/TriviaGame/
 ![Screen3](assets/images/ScreenShot3.png)
 
 
-** About the game **
+## About the game
 
 In this game, you will find interesting facts about our world, for example, the longest river, the largest tree, etc., expand your knowledge about it.
 
@@ -29,7 +29,7 @@ In this game, you will find interesting facts about our world, for example, the 
 
 4. On the bottom, you see 4 answers. One of them is correct.
 
-** Rules **
+## Rules
 
 1. You must press on one of the answers.
 
@@ -41,5 +41,12 @@ In this game, you will find interesting facts about our world, for example, the 
 
 5. The game ends when you answer all the questions, whether correct or not!
 
-
 GOOD LUCK!
+
+## Author
+
+* **Arman Bareyan** [ABareyan](https://github.com/ABareyan)
+
+## License
+
+No license agreements, do as you will with the program. 

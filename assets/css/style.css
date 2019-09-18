@@ -9,7 +9,7 @@ body {
 
 #container {
     position: relative;
-    background-color: antiquewhite;
+    background-color: rgb(250, 235, 215);
     width: 80%;
     height: 600px;
     border: 1px solid #000;
@@ -17,8 +17,8 @@ body {
     box-shadow: 5px 5px 5px 5px #000;
 }
 
-.hint1,
-.hint2 {
+#hint1,
+#hint2 {
     position: absolute;
     border: 1px solid #000;
     width: 50px;
@@ -26,12 +26,12 @@ body {
     margin: 10px;
 }
 
-.hint1 {
+#hint1 {
     right: 40px;
     top: 0;
 }
 
-.hint2 {
+#hint2 {
     right: 120px;
     top: 0;
 }
@@ -95,7 +95,7 @@ header {
 img {
     display: block;
     margin: 0 auto;
-    width: 200px;
+    height: 200px;
 }
 
 #middle {
@@ -121,10 +121,6 @@ img {
     font-size: 1.6em;
 }
 
-.answersAll {
-    margin: 10px;
-}
-
 #correct,
 #incorrect,
 #unanswered {
@@ -147,6 +143,33 @@ img {
     cursor: pointer;
     font-size: 2.2em;
     text-shadow: 2px 2px 2px rgb(156, 158, 146);
+}
+
+.answersAll {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.answersAll p {
+    font-size: 1.8em;
+    font-style: oblique;
+    padding-top: 60px;
+    text-align: center;
+    line-height: 2;
+}
+
+#progressbar {
+    border: none;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.ui-widget-header {
+    background: rgb(168, 121, 63) 50% 50% repeat-x;
+}
+
+.ui-widget-content {
+    background: rgb(238, 208, 169) 50% 50% repeat-x;
 }
 
 @media screen and (min-width: 767px) and (max-width: 980px) {
