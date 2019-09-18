@@ -19,7 +19,7 @@ https://abareyan.github.io/TriviaGame/
 
 In this game, you will find interesting facts about our world, for example, the longest river, the largest tree, etc., expand your knowledge about it.
 
-** How to play this game. **
+## How to play this game.
 
 1. You must press the button start for starting the game.
 
